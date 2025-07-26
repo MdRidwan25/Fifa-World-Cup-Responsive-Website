@@ -38,7 +38,56 @@ height: 64px;
   border: none;
   color: rgb(8, 8, 8);
   font-weight: 700;
+  border: 1px solid red;
 }
+
+@keyframes banner-animation{
+
+
+0%{
+opacity: 0;
+transform: translateX(-20px);
+
+
+}
+
+50%{
+opacity: 0.5;
+transform: translateX(-10px);
+}
+
+100%{
+opacity: 1;
+transform: translateX(0px);
+
+}
+
+}
+@keyframes banner-player-animation{
+
+
+0%{
+opacity: 0.5;
+transform: translateX(-20px);
+
+
+}
+
+50%{
+opacity: 0.5;
+transform: translateX(-10px);
+}
+
+100%{
+opacity: 1;
+transform: translateX(0px);
+
+}
+
+}
+
+
+
 
 .banner {
   background-color: #161616;
@@ -47,6 +96,9 @@ height: 64px;
   display: flex;
   align-items: center;
   margin: 50px auto;
+
+animation: banner-animation 0.7s ease-out forwards;
+
 }
 
 .banner-left h1 {
@@ -70,6 +122,8 @@ height: 64px;
   width: 621.9px;
   height: 613px;
   display: block;
+animation: banner-player-animation 1s ease-in infinite;
+
 }
 .banner-right{
 
